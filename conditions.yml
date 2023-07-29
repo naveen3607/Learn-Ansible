@@ -2,7 +2,7 @@
   hosts: all
   connection: local
   vars:
-    fruit: false
+    fruit: true
     vegetable: false
   tasks:
     - name: Print Fruit Names
