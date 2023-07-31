@@ -1,9 +1,15 @@
 - name: Variable
-  hosts: WEB
+  hosts: localhost
+  connection: local
   vars:
-    URL: google.com
+    URL: play.google.com
   tasks:
     - name: Print Variable
       ansible.builtin.debug:
         msg: URL = {{ URL }}
 ## Ansible access variables with two flower brackets
+    - name: Print Task Varible
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
+      vars:
+        URL: task.google.com
