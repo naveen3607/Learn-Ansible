@@ -1,7 +1,6 @@
 - name: Print Variable
   ansible.builtin.debug:
     msg: URL = {{ URL }}
-    state: latest
 
 - name: Print Variable - Task Variable Defined
   ansible.builtin.debug:
