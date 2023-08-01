@@ -8,3 +8,7 @@
       ansible.builtin.template:
         src: test.txt
         dest: /tmp/test.txt
+
+#HashiCorp Vault - Manage Secrets and Protect Sensitive Data
+#HashiCorp Consul - Identity based networking
+#AWS Systems Manager Parameter Store - Secrets and Configuration Management
