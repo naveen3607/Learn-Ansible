@@ -3,8 +3,8 @@
   connection: local
   vars:
     fruits:
-      - Orange
-      - Apple
+      - orange
+      - apple
   tasks:
     - name: Print Fruits
       ansible.builtin.debug:
@@ -22,6 +22,6 @@
       ansible.builtin.debug:
         msg: Fruit Name - {{ item.name }} , Quantity - {{ item.quantity }}
       loop:
-        - { name: "Orange", quantity: 100 }
+        - { name: "orange", quantity: 100 }
         - { name: "apple", quantity: 200 }
         - { name: "kiwi", quantity: 300 }
