@@ -9,4 +9,4 @@
     - name: Print
       ansible.builtin.debug:
         msg: Fruit Name - {{ fruit_name }}, Quantity - {{ quantity }}
-      when: for_sale
+      when: for_sale | bool
